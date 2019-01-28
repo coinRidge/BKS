@@ -1,4 +1,4 @@
-# vue-bks
+# bks-vue-study
 
 ## Project setup
 ```
