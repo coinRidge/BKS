@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="copy" basedir="." default="all">
+  <!-- Local system paths -->
+
+  <!-- src -->
+  <property name="git.project.dir" value="C://git/olp_dcs/Domestic12/Project" />
+  <property name="web.src.dir" value="${git.project.dir}/domestic-web/src/main/webapp" />
+  <!-- target -->
+  <property name="weblogic.dir" value="C:/Oracle_12c/Middleware/Oracle_Home/user_projects/domains/base_domain/servers/DCS/tmp" />
+  <property name="web.dir" value="${weblogic.dir}/_WL_user/WLS_DCS/45mlr9/war" />
+
+  <target name="copyVue">
+    <copy todir="${web.dir}/app/booking/vue">
+      <fileset dir="${git.project.dir}/vue-bks/dist" />
+    </copy>
+  </target>
+</project>

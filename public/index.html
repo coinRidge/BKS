@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Developping</title>
+
+</head>
+
+<body>
+  <div id="sessionTimeOut"></div>
+  <div id="app"></div>
+    <script type="text/javascript" src="<%= BASE_URL %>injectDcsUser.js"></script>
+    <script type="text/javascript" src="<%= BASE_URL %>dcsDynamic.js"></script>
+    <script type="text/javascript" src="<%= BASE_URL %>dcs-uiConfig.js"></script>
+    <script type="text/javascript" src="<%= BASE_URL %>dcs-base.js"></script>
+    <script type="text/javascript" src="<%= BASE_URL %>DCSScodes.js"></script>
+    <script type="text/javascript" src="<%= BASE_URL %>dcs_langs_en_US.js"></script>
+    <script type="text/javascript" src="<%= BASE_URL %>dcs_userlangs_en_US.js"></script>
+    <script type="text/javascript" src="<%= BASE_URL %>ResourceAdapter.js"></script>
+    <script type="text/javascript" src="<%= BASE_URL %>BKS.js"></script>
+    <script>
+      var environmentID = 'QA'
+      window.NSUIConf.userType = 'CTW'
+      window.lang = 'en_US'
+      var paramObj = {
+        oid: 0,
+        action: null
+      }
+    </script>
+</body>
+
+</html>

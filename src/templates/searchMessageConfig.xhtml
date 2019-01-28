@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:f="http://java.sun.com/jsf/core" xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:rich="http://richfaces.org/rich" xmlns:a4j="http://richfaces.org/a4j" xmlns:t="http://myfaces.apache.org/tomahawk"
+      xmlns:cs="http://www.oocllogistics.com/common" xmlns:x="http://myfaces.apache.org/extensions" xmlns:c="http://java.sun.com/jstl/core"
+      xmlns:csui="http://www.oocllogistics.com/common/ui">
+<ui:composition template="/pub/bks/bks_vue_template.xhtml">
+    <ui:define name="bks_title">
+        #{labels.searchMsgConfig}
+    </ui:define>
+    <ui:define name="bks_head">
+        <script type='text/javascript' src='/dmpod/dwr/engine.js'></script>
+        <script type='text/javascript' src='../../../dwr/interface/CoreBizService.js?v=#{dcsAppBean.version}'></script>
+        <script type='text/javascript' src='../../../dwr/interface/DWRProfileService.js?v=#{dcsAppBean.version}'></script>
+        <script type='text/javascript' src='../../../dwr/interface/BookingAgentService.js?v=#{dcsAppBean.version}'></script>
+    </ui:define>
+    <ui:define name="bks_body">
+        <div id="app"></div>
+    </ui:define>
+</ui:composition>
+</html>

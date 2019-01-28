@@ -1,0 +1,4 @@
+static/dev/
+node_modules/
+src/common/common-constant.js
+src/common/baseConstant.js
